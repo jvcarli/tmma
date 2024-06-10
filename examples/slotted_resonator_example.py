@@ -1,6 +1,6 @@
 if __name__ == "__main__":
 
-    from tmm.tmm import TMM
+    from tmma.tmm import TMM
 
     # Define the frequency range, resolution and sound incidence
     treatment = TMM(fmin=10, fmax=5000, df=1, incidence="diffuse", incidence_angle=[0, 78, 1],

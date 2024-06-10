@@ -27,10 +27,10 @@ from scipy.interpolate import CubicSpline
 from scipy.signal import butter, freqz, savgol_filter
 from scipy.special import jv
 
-from tmm import _h5utils as h5utils
-from tmm import _plot as plot
-from tmm import _utils as utils
-from tmm.database.path import path as database_path
+from tmma import _h5utils as h5utils
+from tmma import _plot as plot
+from tmma import _utils as utils
+from tmma.database.path import path as database_path
 
 plot.set_style()
 
@@ -1476,7 +1476,7 @@ class TMM:
 
     def filter_alpha(self, n_oct=1, view=True, show_table=False, **kwargs):
         """
-        Filters the absorption coefficient into fractional octave bands. See tmm._plot.acoustic data for kwargs.
+        Filters the absorption coefficient into fractional octave bands. See tmma._plot.acoustic_data for kwargs.
 
         Parameters
         ----------
@@ -1726,7 +1726,7 @@ class TMM:
         print(filename + ".h5 loaded successfully.")
 
     def plot(self, show_fig=True, **kwargs):
-        """View acoustic data. See tmm._plot.acoustic data for kwargs."""
+        """View acoustic data. See tmma._plot.acoustic_data for kwargs."""
         if "filename" not in kwargs:
             kwargs["filename"] = self.filename
         if "project_folder" not in kwargs:
@@ -1736,8 +1736,8 @@ class TMM:
             plt.show()
 
     def view(self, show_fig=True, **kwargs):
-        """View 3D treatment model and performance. See tmm._vis.view_layers and tmm._vis.view_treatment for kwargs."""
-        from tmm import _vis as vis
+        """View 3D treatment model and performance. See tmma._vis.view_layers and tmma._vis.view_treatment for kwargs."""
+        from tmma import _vis as vis
         if "template" not in kwargs:
             kwargs["template"] = "seaborn"
         if "height" not in kwargs:

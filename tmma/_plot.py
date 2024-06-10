@@ -107,7 +107,7 @@ def acoustic_data(tmms, fig=None, ax=None, gs=None, figsize=(16, 9), plots=None,
     filename : str
         String that will be used as the full or partial file name.
     kwargs : keyword arguments, optional
-        See tmm._plot.save_matplotlib_fig.
+        See tmma._plot.save_matplotlib_fig.
 
     Returns
     -------
@@ -279,7 +279,7 @@ def oct_filter(narrowbad_freq, narrowband_value, freq_bands, filtered_value, n_o
     base_fontsize : int, optional
         Base font size.
     kwargs : keyword arguments, optional
-        See tmm._plot.save_matplotlib_fig.
+        See tmma._plot.save_matplotlib_fig.
 
     Returns
     -------

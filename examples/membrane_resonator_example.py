@@ -1,6 +1,6 @@
 if __name__ == "__main__":
 
-    from tmm.tmm import TMM
+    from tmma.tmm import TMM
 
     # Define the frequency range, resolution and sound incidence
     treatment = TMM(fmin=20, fmax=5000, df=1, incidence="normal", filename="example_membrane_resonator")
